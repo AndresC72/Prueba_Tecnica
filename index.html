@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css" integrity="sha384-HSMxcRTRxnN+Bdg0JdbxYKrThecOKuH5zCYotlSAcp1+c8xmyTe9GYg1l9a69psu" crossorigin="anonymous">    
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+    <title>Formulario</title>
+</head>
+<body>
+   <div class="container">
+      <div class="panel panel-default">
+         <div class="panel-heading">
+            <h4 class="panel-title">Crear Empleado </h4>
+           
+         </div>
+         <div class="panel-body">           
+            <form class="form-horizontal" id="signupForm">
+                <div class="alert alert-info" role="alert">Los campos con asteriscos (*) son obligatorios</div>
+            <div class="form-group">
+                <label for="fullname" class="col-sm-2 control-label">Nombre completo *</label>
+                <div class="col-sm-10">
+                    <input type="text" id="fullname" name="fullname" class="form-control" placeholder="Nombre completo del Empleado" >
+                </div>
+            </div>
+           
+           <div class="form-group">
+                <label for="email" class="col-sm-2 control-label">Correo electronico *</label>
+                <div class="col-sm-10">
+                    <input type="text" id="email" name="email" class="form-control" placeholder="Correo electrónico">
+                </div>
+            </div>
+
+
+            <div class="form-group">
+                <div class="col-sm-offset-2 col-sm-10">
+                    <label for="email" class="col-sm-2 control-label">Sexo *</label>
+               
+                    <div class="radio">
+                        <label><input type="radio" name="count" value="cold">Masculino</label>
+                   
+                        <label><input type="radio" name="count" value="rainy">Femenino</label>
+                    </div>
+                </div>
+            </div>
+            
+          
+            <div class="form-group">
+                <div class="col-sm-offset-2 col-sm-10">
+                    <label for="luckynumber">Area *</label>
+                    <select name="luckynumber" id="luckynumber" class="form-control">
+                        <option value="">--Seleccionar--</option>
+                        <option value="double zero">Ventas</option>
+                        <option value="seven">Calidad</option>
+                        <option value="thirteen">Produccion</option>
+                    </select>
+                </div>
+            </div>
+
+                   
+            <div class="form-group">
+                <label for="comments" class="col-sm-2 control-label">Descripcion *</label>
+                <div class="col-sm-10">
+                    <textarea name="comments" id="comments" cols="40" rows="5" class="form-control" placeholder="Descripcion de la experiencia del empleado"></textarea>
+                </div>
+            </div>
+             
+
+
+
+            
+            <div class="form-group">
+                <div class="col-sm-offset-2 col-sm-10">
+                    <label for="comments" class="col-sm-2 control-label">Roles *</label>
+                    <br>
+                    <div class="checkbox">
+                        <label><input type="checkbox" value="dog">Deseo recibir boletin informativo</label>
+                        <br>
+                    
+                        <label><input type="checkbox" value="cat">Profesional de proyectos - Desarrollador</label>
+                        <br>
+                    
+                        <label><input type="checkbox" value="Owned">Gerente estratégico</label>
+                        <br>
+
+                        <label><input type="checkbox" value="Owned">Auxiliar administrativo</label>
+                   
+                </div>
+            </div>
+
+         <br></br>
+         <br></br>
+         <br></br>
+         <br></br>
+    
+            
+            <div class="form-group">
+                <div class="col-sm-offset-2 col-sm-10">
+                    <input type="submit" class="btn btn-primary" value="Guardar"/>
+                </div>
+            </div>
+
+        </form> 
+
+        <br></br>
+        <br></br>
+
+
+
+        <table class="table">
+            <thead>
+              <tr>
+                <th scope="col">#</th>
+                <th scope="col">Nombre<i class="fas fa-user"></th></i>
+                <th scope="col">Email<i class="fas fa-at"></th></i>
+                <th scope="col">Sexo<i class="fas fa-venus-mars"></th></i>
+                <th scope="col">Area<i class="fas fa-briefcase"></th></i>
+                <th scope="col">Boletin<i class="fas fa-envelope"></th></i>
+                <th scope="col">Modificar</th>
+                <th scope="col">Eliminar</th>
+                
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <th scope="row">1</th>
+                <td>Mark</td>
+                <td>Otto</td>
+                <td>@mdo</td>
+                <td>@mdo</td>
+                <td>@mdo</td>
+
+              </tr>
+              <tr>
+                <th scope="row">2</th>
+                <td>Jacob</td>
+                <td>Thornton</td>
+                <td>@fat</td>
+                <td>@mdo</td>
+                <td>@mdo</td>
+              </tr>
+              <tr>
+                <th scope="row">3</th>
+                <td>Larry</td>
+                <td>the Bird</td>
+                <td>@twitter</td>
+                <td>@mdo</td>
+                <td>@mdo</td>
+              </tr>
+              <tr>
+                <th scope="row">4</th>
+                <td>Larry</td>
+                <td>the Bird</td>
+                <td>@twitter</td>
+                <td>@mdo</td>
+                <td>@mdo</td>
+              </tr>
+            </tbody>
+          </table>
+               
+  
+            </tbody>
+          </table>
+
+
+
+         </div>
+      </div>
+   </div>
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js" integrity="sha384-nvAa0+6Qg9clwYCGGPpDQLVpLNn0fRaROjHqs13t4Ggj3Ez50XnGQqc/r8MhnRDZ" crossorigin="anonymous"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js" integrity="sha384-aJ21OjlMXNL5UyIl/XNwTMqvzeRMZH2w8c5cRVpzpU8Y5bApTppSuUkhZXN0VxHd" crossorigin="anonymous"></script>
+   <script src="https://cdn.jsdelivr.net/npm/jquery-validation@1.19.0/dist/jquery.validate.js"></script>
+   <!-- aca referencio el jquery -->
+   <script src="js/formu.js"></script>
+</body>
+</html>
+
